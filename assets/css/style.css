@@ -49,11 +49,24 @@ nav {
     transform: translateY(-50%);
 }
 
-.overlay{
+.overlay {
     width: 0;
     height: 0;
-    border-top: 500px solid red;
-    border-right: 500px solid rgb(0, 132, 255);
-    border-bottom: 500px solid rgb(34, 32, 32);
-    border-left: 500px solid rgb(0, 255, 13);
+    border-top: 500px solid #ff56bb;
+    border-right: 500px solid #d6dee6;
+    border-bottom: 500px solid#161516;
+    border-left: 500px solid #fef8fa;
+}
+
+.controls {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.controls h1 {
+    margin: 15px 0;
 }

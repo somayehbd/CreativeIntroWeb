@@ -1,12 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.main{
+
+.background {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background:linear-gradient( to right, #9c27b0, #8ecdff )
+    background: linear-gradient(to right, #9c27b0, #8ecdff)
 }
+
+nav {
+    width: 100%;
+    margin: 15px;
+    align-items: center;
+
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.controls {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

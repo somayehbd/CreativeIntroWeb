@@ -9,8 +9,8 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(to right, #626262,#343541, #000000);
-    
+    background: linear-gradient(to right, #626262, #343541, #000000);
+
 }
 
 nav {
@@ -57,7 +57,7 @@ nav {
     border-right: 500px solid transparent;
     border-bottom: 500px solid#fff;
     border-left: 500px solid #fef8fa;
-    
+
 }
 
 .controls {
@@ -71,5 +71,12 @@ nav {
 
 .controls h1 {
     margin: 15px 0;
-    
+}
+.laptop{
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    /* transform: translateY(-50%);
+    z-index: 1; */
 }

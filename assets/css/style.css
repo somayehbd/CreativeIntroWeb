@@ -47,7 +47,6 @@ nav {
     top: 50%;
     left: -5%;
     transform: translateY(-50%);
-
 }
 
 #circle {
@@ -71,7 +70,7 @@ nav {
     top: 50%;
     right: 20%;
     transform: translateY(-50%);
-    
+    transform: rotate(180deg);
 }
 
 .left {
@@ -85,25 +84,30 @@ nav {
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
+    transform: rotate(90deg);
 }
 
 .down {
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
+    transform: rotate(-90deg);
 }
 
 .overlay {
     width: 0;
     height: 0;
-    border-top: 500px solid #fff;
-    border-right: 500px solid transparent;
-    border-bottom: 500px solid#fff;
-    border-left: 500px solid #fef8fa;
+    border-top: 500px solid linear-gradient(to right, #626262, #343541, #000000);
+    border-left: 500px solid transparent;
+    border-right: 500px solid linear-gradient(to right, #626262, #343541, #000000);
+    border-bottom: 500px solid linear-gradient(to right, #626262, #343541, #000000);
+    position: absolute;
 
-
+    
 }
-
+.downBtn{
+    cursor: pointer;
+}
 .controls {
     position: absolute;
     right: 10%;
@@ -124,8 +128,4 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-}
-.downBtn{
-    cursor: pointer;
- transform: rotate(180deg);
 }

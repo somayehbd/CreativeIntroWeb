@@ -57,7 +57,9 @@ nav {
     top: 0;
     left: 0;
     border-radius: 50%;
-    background: #ccc;
+    /* background: #ccc; */
+    transform: rotate(-0deg);
+    transition: 1s;
 }
 
 .feature {
@@ -67,13 +69,14 @@ nav {
 
 .right {
     top: 50%;
-    right: 10%;
+    right: 20%;
     transform: translateY(-50%);
+    
 }
 
 .left {
     top: 50%;
-    left: 10%;
+    left: 20%;
     transform: translateY(-50%);
 }
 
@@ -121,4 +124,8 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+.downBtn{
+    cursor: pointer;
+ transform: rotate(180deg);
 }

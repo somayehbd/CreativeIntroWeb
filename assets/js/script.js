@@ -11,3 +11,13 @@ upBtn.onclick = function () {
     i = (i + 1) % colors.length;
   }, 3000);
 };
+// down botton event
+let downBtn = document.getElementById('downBtn')
+let circle = document.getElementById('circle')
+let lastDegree = 0;
+
+downBtn.onclick = function() {
+  debugger;
+  lastDegree += 90;
+  circle.style.transform = `rotate(-${lastDegree}deg)`;
+};

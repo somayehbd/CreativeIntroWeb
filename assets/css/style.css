@@ -9,7 +9,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(to right, #626262, #343541, #000000);
+    background: #282831;
 
 }
 
@@ -57,7 +57,7 @@ nav {
     left: 0;
     border-radius: 50%;
     /* background: #ccc; */
-    transform: rotate(-0deg);
+    transform: rotate(0deg);
     transition: 1s;
 }
 
@@ -69,8 +69,7 @@ nav {
 .right {
     top: 50%;
     right: 20%;
-    transform: translateY(-50%);
-    transform: rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .left {
@@ -83,31 +82,36 @@ nav {
 .top {
     top: 20%;
     left: 50%;
-    transform: translateX(-50%);
-    transform: rotate(90deg);
+    transform: translateX(-50%) rotate(90deg);
 }
 
 .down {
     bottom: 20%;
     left: 50%;
-    transform: translateX(-50%);
-    transform: rotate(-90deg);
+    transform: translateX(-50%) rotate(-90deg);
 }
 
 .overlay {
     width: 0;
     height: 0;
-    border-top: 500px solid linear-gradient(to right, #626262, #343541, #000000);
+    border-top: 500px solid #282831;
     border-left: 500px solid transparent;
-    border-right: 500px solid linear-gradient(to right, #626262, #343541, #000000);
-    border-bottom: 500px solid linear-gradient(to right, #626262, #343541, #000000);
+    border-right: 500px solid #282831;
+    border-bottom: 500px solid #282831;
     position: absolute;
+}
 
-    
+.overlayBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: pink;
 }
-.downBtn{
-    cursor: pointer;
+
+#upBtn {
+    cursor:pointer;
 }
+
 .controls {
     position: absolute;
     right: 10%;
